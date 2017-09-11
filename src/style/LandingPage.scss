@@ -1,0 +1,33 @@
+@import "vars.scss";
+
+.landing-content {
+  .background {
+    width: 100%;
+    height: $BACKGROUND_SIZE;
+    display: flex;
+    flex-direction: row;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0.1em 0.8em 0 #000000;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    position: fixed;
+    * {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .panels {
+    width: 100%;
+    margin-top: $BACKGROUND_SIZE + 50px;
+    display: flex;
+    flex-direction: row;
+    * {
+      margin: 0 3em 1em 2em;
+    }
+  }
+}

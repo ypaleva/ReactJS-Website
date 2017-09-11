@@ -1,0 +1,21 @@
+@import "../../../style/vars.scss";
+
+.header {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: $HEADER_SIZE;
+  background-color: rgba(222, 215, 206, 0.3);
+  box-shadow: 0 0.1em 0.8em 0 #000000;
+  .links {
+    float: right;
+    margin-top: 3em;
+    margin-right: 2em;
+    * {
+      color: #000000;
+      margin: 3em 2em 0 1em;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../style/vars.scss";
+
+.about-panel{
+  width: 200px;
+  height: 400px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  border-style: ridge;
+  margin-top: $HEADER_SIZE;
+  margin-left: 3%;
+  background: #606063;
+  background: -webkit-linear-gradient(white, #ded7ce);
+  background: -o-linear-gradient(white, #ded7ce);
+  background: -moz-linear-gradient(white, #ded7ce);
+  background: linear-gradient(white, #ded7ce);
+  .panel-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

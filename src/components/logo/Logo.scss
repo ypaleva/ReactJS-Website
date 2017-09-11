@@ -1,0 +1,10 @@
+@import "../../style/vars.scss";
+
+.logo {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: $SIDEBAR_SIZE;
+}

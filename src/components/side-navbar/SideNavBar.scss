@@ -1,0 +1,26 @@
+@import "../../style/vars.scss";
+
+.side-navbar {
+  .container {
+    overflow: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 3%;
+    width: 120px;
+    margin-top: $HEADER_SIZE;
+    margin-bottom: $FOOTER_SIZE;
+    line-height: 20px;
+    display: block;
+    text-align: right;
+    background-color: white;
+    a {
+      color: #606063;
+    }
+    *:hover{
+      color: #909090;
+      background-color: white;
+    }
+  }
+}
