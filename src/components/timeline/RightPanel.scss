@@ -1,0 +1,19 @@
+.right-panel {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-style: double none double none;
+  .gallery{
+
+  }
+  .description {
+    margin: 0 0.5em 0 0.5em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+}

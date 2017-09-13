@@ -22,9 +22,9 @@ class PlayerPanel extends Component {
             <div className="player-panel">
 
                 <div className="player-buttons">
-                    <i className="fa fa-step-backward" style={buttonStyle}></i>
-                    <i className="fa fa-play" style={playStyle}></i>
-                    <i className="fa fa-step-forward" style={buttonStyle}></i>
+                    <i className="fa fa-step-backward" style={buttonStyle} onClick={this.props.onStepBackward}></i>
+                    <i className={this.props.icon} style={playStyle} onClick={this.props.onPlay}></i>
+                    <i className="fa fa-step-forward" style={buttonStyle} onClick={this.props.onStepForward}></i>
                 </div>
             </div>
         );

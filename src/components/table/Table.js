@@ -12,7 +12,7 @@ class Table extends Component {
 
         let rowStyle= {
             cursor: 'pointer',
-            backgroundColor: '#ded7ce'
+            backgroundColor: '#f6f6f6'
         };
 
         let rows = this.props.playlist.map((song, i) => <TableRow key={i} className="row" playlist={song}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import "../../style/NotFoundPage.scss";
 import Header from "../blocks/header/Header";
+import Footer from "../blocks/footer/Footer";
 
 class NotFoundPage extends Component {
 
@@ -11,8 +12,9 @@ class NotFoundPage extends Component {
                 <Header/>
                 <div className="message">
                     <h3>404 page not found</h3>
-                    <p>We are sorry but the page you are looking for does not exist.</p>
+                    <p>The page you are looking for does not exist.</p>
                 </div>
+                <Footer/>
             </div>
         );
     }

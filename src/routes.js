@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, Switch} from 'react-router';
-import HomePage from "./containers/pages/HomePage";
 import LandingPage from "./containers/pages/LandingPage";
 import NotFoundPage from "./containers/pages/NotFoundPage";
 import Page from "./containers/layouts/Page";
@@ -18,9 +17,9 @@ const Routes = () => {
         <Page>
             <Switch>
                 <Route key={0} exact path="/" onEnter={scrollToTop} render={() => <LandingPage/>}/>,
-                <Route key={1} path="/home" onEnter={scrollToTop} render={() => <HomePage/>}/>,
-                <Route key={2} path="/cv" onEnter={scrollToTop} render={() => <CVPage/>}/>,
-                <Route key={3} path="/gallery" onEnter={scrollToTop} render={() => <GalleryPage/>}/>,
+                <Route key={1} path="/about" onEnter={scrollToTop} render={() => <AboutPage/>}/>,
+                <Route key={2} path="/resume" onEnter={scrollToTop} render={() => <CVPage/>}/>,
+                <Route key={3} path="/photography" onEnter={scrollToTop} render={() => <GalleryPage/>}/>,
                 <Route key={4} path="/timeline" onEnter={scrollToTop} render={() => <TimelinePage/>}/>,
                 <Route key={5} path="/music" onEnter={scrollToTop} render={() => <MusicPage/>}/>,
                 <Route key={6} path="*" onEnter={scrollToTop} render={() => <NotFoundPage/>}/>,

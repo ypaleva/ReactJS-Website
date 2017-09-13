@@ -8,8 +8,8 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="links">
-                    <Link link="/home" text="Home"/>
-                    <Link link="/contact" text="Contact"/>
+                    <Link link="/about" text="About"/>
+                    <Link link="/" text="Home"/>
                 </div>
             </div>
         );

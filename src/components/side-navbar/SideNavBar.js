@@ -13,9 +13,10 @@ class SideNavBar extends Component {
                 <div className="container">
                     <div className="row">
                             <ul className="nav nav-pills nav-stacked">
-                                <li><a href="#section1">Section 1</a></li>
-                                <li><a href="#section2">Section 2</a></li>
-                                <li><a href="#section3">Section 3</a></li>
+                                <li><a href="/resume">Resume</a></li>
+                                <li><a href="/photography">Photography</a></li>
+                                <li><a href="/timeline">Timeline</a></li>
+                                <li><a href="/music">Music</a></li>
                             </ul>
                     </div>
                 </div>

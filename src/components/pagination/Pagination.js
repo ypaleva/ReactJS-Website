@@ -6,6 +6,16 @@ class Pagination extends Component {
 
     constructor(props) {
         super(props);
+        this.handlePrev = this.handlePrev.bind(this);
+        this.handleNext = this.handleNext.bind(this);
+    }
+
+    handlePrev() {
+        this.props.onChange(-1);
+    }
+
+    handleNext() {
+        this.props.onChange(1);
     }
 
     render() {
@@ -13,19 +23,16 @@ class Pagination extends Component {
         let blocks = [];
         for (let i = 1; i <= length; i++) {
             blocks.push(
-                <PaginationBlock key={i} number={i} className={this.props.className}
-                          onClick={this.props.onClick}/>
+                <PaginationBlock key={i} number={i} className={i === this.props.current ? "active" : ""}
+                                 onClick={this.props.onClick}/>
             )
-        };
-
-        console.log(blocks)
-
+        }
         return (
             <div className="center">
                 <div className="pagination">
-                    <a href="#" onClick={this.props.onClickPrev}>&laquo; Previous</a>
+                    <a href="#" onClick={this.handlePrev}>&laquo; Previous</a>
                     {blocks}
-                    <a href="#" onClick={this.props.onClickNext}>Next &raquo;</a>
+                    <a href="#" onClick={this.handleNext}>Next &raquo;</a>
                 </div>
             </div>
         );

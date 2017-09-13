@@ -7,9 +7,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <div className="social">
-                    <SocialIcons/>
-                </div>
+                <SocialIcons/>
             </div>
         );
     }

@@ -7,6 +7,7 @@ import Modal from "../../components/modal/Modal";
 import Carousel from "../../components/carousel/Carousel";
 import SideNavBar from "../../components/side-navbar/SideNavBar";
 import AboutMePanel from "../../components/panel/AboutMePanel";
+import Footer from "../blocks/footer/Footer";
 
 class GalleryPage extends Component {
 
@@ -54,6 +55,7 @@ class GalleryPage extends Component {
                 <div className="carousel-modal">
                     <Modal current={this.state.gallery[this.state.current]} onClick={this.changeIndex}/>
                 </div>
+                <Footer/>
             </div>
         );
     }
