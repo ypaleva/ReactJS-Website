@@ -13,7 +13,7 @@ class RightPanel extends Component {
         return (
             <div className="right-panel">
                 <div className="gallery">
-                    <Carousel current="https://cdn.pixabay.com/photo/2017/06/02/08/17/french-bulldog-2365662__340.jpg"/>
+                    <Carousel current={this.props.current} onClick={this.props.onClick}/>
                 </div>
                 <div className="description">
                     some text
