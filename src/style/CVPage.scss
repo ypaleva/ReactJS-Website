@@ -1,5 +1,5 @@
 .cv-content {
-  height: 2000px;
+  height: 3000px;
   background-color: #e6e6e6;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   text-align: center;
   overflow: hidden;
   .cv {
-    width: 60%;
+    width: 65%;
     height: 100%;
     background-color: white;
     display: flex;
@@ -15,20 +15,129 @@
     box-shadow: 0 0.1em 0.8em 0 #000000;
     margin-top: 1%;
     margin-bottom: 1%;
+
+    .skills-chart {
+      width: 35%;
+      float: left;
+      margin-left: 5%;
+      list-style: none;
+      display: table;
+      border-collapse: separate;
+    }
+    .skills-chart > li {
+      display: table-row;
+    }
+    .skills-chart > li > * {
+      display: table-cell;
+      border-bottom: 12px solid #fff;
+    }
+
+    .skill {
+      color: #fff;
+      padding: 10px 2px;
+      text-shadow: 0 0 1px #000;
+      text-align: left;
+    }
+    .adaptability {
+      background: #87b9ee;
+      width: 50%;
+    }
+    .problem {
+      background: #87b9ee;
+      width: 60%;
+    }
+    .communication {
+      background: #87b9ee;
+      width: 74%;
+    }
+    .time {
+      background: #87b9ee;
+      width: 68%;
+    }
+    .decision {
+      background: #87b9ee;
+      width: 59%;
+    }
+    .prioritizing {
+      background: #87b9ee;
+      width: 80%;
+    }
+
+    .chart {
+      background: greenyellow;
+      background: conic-gradient(
+                      #ff8f87 4%,
+                      #87b9ee 8%,
+                      greenyellow 17%,
+                      #fff065 48%,
+                      #ffc261 54%);
+      border-radius: 50%;
+      width: 50%;
+      height: 0;
+      padding-top: 50%;
+      float: left;
+      padding-right: 20px;
+    }
+    .key {
+      float: right;
+      list-style: none;
+      display: table;
+      border-collapse: separate;
+    }
+    .key > li {
+      display: table-row;
+    }
+    .key > li > * {
+      display: table-cell;
+      border-bottom: 12px solid #fff;
+    }
+    .percent {
+      color: #fff;
+      padding: 10px 2px;
+      text-shadow: 0 0 1px #000;
+      text-align: center;
+    }
+    .choice {
+      padding-left: 10px;
+    }
+    .red {
+      background: #ff8f87;
+    }
+    .blue {
+      background: #87b9ee;
+    }
+    .green {
+      background: greenyellow;
+    }
+    .yellow {
+      background: #fff065;
+    }
+    .orange {
+      background: #ffc261;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .body {
+      padding: 20px;
+      font-family: sans-serif;
+    }
     .scroll-button {
       color: #9c9c9c;
       font-size: 20px;
       cursor: pointer;
+
       &:hover {
         color: #717171;
       }
     }
   }
-  header{
+  header {
     font-size: 28px;
-    align-self: flex-start;
-    margin-left: 5%;
+    align-self: center;
     color: #717171;
+    margin-top: 5%;
+    font-style: oblique;
   }
   hr.divider {
     border: 0;
